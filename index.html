@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Assignment</title>
+
+</head>
+<body>
+    <script>
+    var userInput1 = prompt("Please enter a number: ");
+    if (isNaN(userInput1)) {
+        alert("Input is not a number, ending program.");
+        alert(err.message);
+    }
+
+    var userOperator = prompt("Please enter an operator (+, -, , /): ");
+    if (userOperator !== "+" && userOperator !== "-" && userOperator !== "*" && userOperator !== "/") {
+        alert("Invalid operator, ending program.");
+        alert(err.message);
+    }
+
+    var userInput2 = prompt("Please enter a second number: ");
+    if (isNaN(userInput2)) {
+        alert("Input is not a number, ending program.");
+        alert(err.message);
+    }
+
+    var result;
+    if (userOperator == "+"){
+        result = Number(userInput1) + Number(userInput2);
+    }else if(userOperator == "-"){
+        result = Number(userInput1) - Number(userInput2);
+    }else if(userOperator == "*"){
+        result = Number(userInput1) * Number(userInput2);
+    }else if(userOperator == "/"){
+        result = Number(userInput1) / Number(userInput2);
+    }
+
+    alert("The result is " + result);
+    </script>
+</body>
+</html>
